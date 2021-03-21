@@ -44,7 +44,7 @@ export default {
       }
     },
     setup() {
-      document.getElementById("select").innerHTML = '<br><hr /><br><h2> Enter the following </h2><ul><li> Cached Images and Files not used in the last <textarea></textarea> days </li><li> Cookies and other site data smaller than <textarea></textarea> kB </li><li> Search and Browsing History older than <textarea></textarea> days </li><li> Hosted app data used less frequently than every <textarea></textarea> days </li></ul><button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Submit</a></button>';
+      document.getElementById("select").innerHTML = '<br><hr /><br><h2> Edit the following </h2><ul><li> Cached Images and Files not used in the last <textarea placeholder="30"></textarea> days </li><li> Cookies and other site data smaller than <textarea placeholder="5"></textarea> kB </li><li> Search and Browsing History older than <textarea placeholder="30"></textarea> days </li><li> Hosted app data used less frequently than every <textarea placeholder="7"></textarea> days </li></ul><button><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Submit</a></button>';
       this.onCreate();
     },
   },
