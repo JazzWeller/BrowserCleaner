@@ -2,15 +2,15 @@
   <div id="app">
     <div id="nav">
       <div id="links">
-        <router-link to="/">Clean</router-link> |
-        <router-link to="/share">Reviews</router-link>
+        <router-link to="/">Cleaner</router-link> |
+        <router-link to="/share">Testimonials</router-link>
       </div>
     </div>
     <router-view />
     <div class="footer">
       <a
         class="footer-text"
-        href="https://github.com/BYU-CS-260-Winter-2021/lab-3b-grocery-store-JazzWeller"
+        href="https://github.com/JazzWeller/BrowserCleaner"
       >
         Repo
       </a>

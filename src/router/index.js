@@ -20,7 +20,7 @@ const routes = [
     name: "Reviews",
     component: Share,
     meta: {
-      title: 'Reviews'
+      title: 'Testimonials'
     }
   },
   {
