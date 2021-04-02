@@ -2,15 +2,15 @@
   <div id="app">
     <div id="nav">
       <div id="links">
-        <router-link to="/">Cleaner</router-link> |
-        <router-link to="/share">Testimonials</router-link>
+        <router-link to="/">Builds</router-link>
+        <router-link to="/share">Create</router-link>
       </div>
     </div>
     <router-view />
     <div class="footer">
       <a
         class="footer-text"
-        href="https://github.com/JazzWeller/BrowserCleaner"
+        href="https://github.com/JazzWeller/SmiteBuildsWebsite"
       >
         Repo
       </a>
@@ -22,7 +22,7 @@
 export default {
   watch: {
     $route (to) {
-      document.title = to.meta.title || "Cleaner";
+      document.title = to.meta.title || "SMITE Builds";
     }
   }
 }
@@ -34,13 +34,17 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #FF3e50;
+}
+
+body {
+  background-color: #404040;
 }
 
 #nav {
   padding: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 3fr 3fr 1fr;
   grid-column-gap: 5px;
   grid-template-areas: "none none side";
   margin-bottom: 50px;
@@ -48,13 +52,18 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
-  margin-right: 15px;
-  margin-left: 15px;
+  color: #FF3e50;
+  margin: 15px 15px 15px 15px;
+  padding: 0px 0px 5px 10px;
+  border: 5px;
+  border-radius: 6px;
+  text-decoration: none;
+  border-style: none none solid solid;
+  color: #b89500;
 }
 
 #nav a.router-link-exact-active {
-  color: #1299b3;
+  color: #ffce00;
 }
 
 #links {
@@ -62,10 +71,12 @@ export default {
   grid-area: side;
   display: flex;
   justify-content: center;
+  background-color: #000e40;
+  border-radius: 25px;
 }
 
 .footer {
-  background-color: #128493;
+  background-color: #000e40;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -78,7 +89,7 @@ export default {
 }
 
 .footer a {
-  color: black;
+  color: #ffce00;
   margin-right: 1em;
   font-size: 1.5em;
 }

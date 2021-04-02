@@ -1,8 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Share from "../views/Share.vue";
-import Clean from "../views/Clean.vue";
+import Create from "../views/Create.vue";
 
 Vue.use(VueRouter);
 
@@ -12,23 +11,15 @@ const routes = [
     name: "Home",
     component: Home,
     meta: {
-      title: 'Cleaner'
+      title: 'Builds'
     }
   },
   {
-    path: "/share",
-    name: "Reviews",
-    component: Share,
+    path: "/create",
+    name: "Create",
+    component: Create,
     meta: {
-      title: 'Testimonials'
-    }
-  },
-  {
-    path: "/clean",
-    name: "Clean",
-    component: Clean,
-    meta: {
-      title: 'Cleaner'
+      title: 'Create'
     }
   },
 ];

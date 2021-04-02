@@ -1,13 +1,9 @@
 <template>
-  <div class="home">
+  <div class="about">
   </div>
 </template>
 
 <script>
-export default {
-  methods: {
-  },
-}
 </script>
 
 <style scoped>
