@@ -2,15 +2,15 @@
   <div id="app">
     <div id="nav">
       <div id="links">
-        <router-link to="/">Builds</router-link>
-        <router-link to="/share">Create</router-link>
+        <router-link to="/">Home</router-link>
+        <router-link to="/create">Create</router-link>
       </div>
     </div>
     <router-view />
     <div class="footer">
       <a
         class="footer-text"
-        href="https://github.com/JazzWeller/SmiteBuildsWebsite"
+        href="https://github.com/JazzWeller/VaingloryBuilds"
       >
         Repo
       </a>
@@ -21,10 +21,10 @@
 <script>
 export default {
   watch: {
-    $route (to) {
-      document.title = to.meta.title || "SMITE Builds";
+    '$route' (to) {
+      document.title = to.meta.title || "Vainglory Builds";
     }
-  }
+  },
 }
 </script>
 
@@ -34,19 +34,15 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #FF3e50;
-}
-
-body {
-  background-color: #404040;
+  color: black;
 }
 
 #nav {
   padding: 30px;
   display: grid;
-  grid-template-columns: 3fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr 3fr;
   grid-column-gap: 5px;
-  grid-template-areas: "none none side";
+  grid-template-areas: "side none none";
   margin-bottom: 50px;
 }
 
@@ -59,11 +55,11 @@ body {
   border-radius: 6px;
   text-decoration: none;
   border-style: none none solid solid;
-  color: #b89500;
+  color: white;
 }
 
 #nav a.router-link-exact-active {
-  color: #ffce00;
+  color: #C20000;
 }
 
 #links {
@@ -71,12 +67,12 @@ body {
   grid-area: side;
   display: flex;
   justify-content: center;
-  background-color: #000e40;
+  background-color: #23274C;
   border-radius: 25px;
 }
 
 .footer {
-  background-color: #000e40;
+  background-color: #23274C;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -89,7 +85,7 @@ body {
 }
 
 .footer a {
-  color: #ffce00;
+  color: white;
   margin-right: 1em;
   font-size: 1.5em;
 }

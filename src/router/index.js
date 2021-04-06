@@ -2,6 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Create from "../views/Create.vue";
+import Build from "../views/Build.vue";
+import Edit from "../views/Edit.vue";
 
 Vue.use(VueRouter);
 
@@ -11,7 +13,7 @@ const routes = [
     name: "Home",
     component: Home,
     meta: {
-      title: 'Builds'
+      title: 'Vainglory Builds'
     }
   },
   {
@@ -19,7 +21,23 @@ const routes = [
     name: "Create",
     component: Create,
     meta: {
-      title: 'Create'
+      title: 'Select Hero'
+    }
+  },
+  {
+    path: "/build",
+    name: "Build",
+    component: Build,
+    meta: {
+      title: 'Create Build'
+    }
+  },
+  {
+    path: "/edit",
+    name: "Edit",
+    component: Edit,
+    meta: {
+      title: 'Edit Build'
     }
   },
 ];
